@@ -1,0 +1,32 @@
+	/** DEBUT PARALLAXE */
+	.section-home {
+	    z-index: 0; /* Important, si on ne le met pas, le mask ne fonctionne pas */
+	    overflow: hidden; /* Cache le texte qui déborde - Si on veut ajouter un texte parallaxe */ 
+		background-position: center top;
+	}
+	.section-education {
+	    z-index: 0; /* Important, si on ne le met pas, le mask ne fonctionne pas */
+	    overflow: hidden; /* Cache le texte qui déborde - Si on veut ajouter un texte parallaxe */ 
+		background-position: center top;
+	}
+	@media screen and (min-width: 800px) {
+		.section-home {
+		    background: url(../img/header/parallaxe.jpg) no-repeat;
+		    background-attachment: fixed;
+		    background-size: cover;
+		}
+		.section-education {
+		    background: url(../img/education/parallaxe.jpg) no-repeat;
+		    background-attachment: fixed;
+		    background-size: cover;
+		}
+	}
+	@media screen and (max-width: 800px) {
+		.section-home {
+	    	background: url(../img/header/parallaxe.jpg) no-repeat; /* Réinitialisation du bg sinon sur mobile le bg-attachement rend l'image tellement grande qu'on ne voit plus rien */
+		}
+		.section-education {
+	    	background: url(../img/education/parallaxe.jpg) no-repeat;
+		}
+	}
+	/** FIN PARALLAXE */

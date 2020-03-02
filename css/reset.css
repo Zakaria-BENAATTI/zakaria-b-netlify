@@ -1,0 +1,16 @@
+/**{font-size:16px;}*/
+html,body{width:100%;height:100%;margin:0;padding:0;}
+body{overflow-x:hidden;}
+h1{font-size:32px;}
+h2{font-size:24px;}
+h3{font-size:18px;}
+h4{font-size:16px;}
+h5{font-size:14px;}
+h6{font-size:11px;}
+ul{margin:0;padding:0;}
+ul li{list-style-type:none;display:inline-block;}
+a{text-decoration:none;color:#466996;}
+a:hover{color:#c3c8d6;}
+label,form,form tr,form tr td,fieldset,fieldset legend,input,div{height:auto;width:auto;border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;box-sizing:border-box;list-style:none}
+table{border-collapse:collapse;border-spacing:0}
+textarea{box-sizing:border-box;resize:none;}

@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Mirrored from florian-g.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Feb 2020 10:26:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio -  Développeur Fullstack - Zakaria B.</title>
+	<link type="image/png" rel="shortcut icon" href="img/static/favicons-06.png" />
+	<meta name="description" content="Développeur informatique et développeur Web full stack, j'ai également suivi des études de gestion de projet et design web.":>
+	<meta name="author" content="Zakaria BENAATTI />
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	<script type="text/javascript" src="lib/jquery3.11.min.js"></script>
+	<script type="text/javascript" src="lib/jqueryUI1.12.min.js"></script>
+	<!-- DEBUT SLICK -->
+	<script type="text/javascript" src="lib/slick1.6/jquerySlick1.6.min.js"></script>
+	<script type="text/javascript" src="lib/slick1.6/jqueryMigrate1.21.min.js"></script>
+	<!-- FIN SLICK -->
+
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+
+	<!-- SCRIPTS JS -->
+ 			<script type="text/javascript" src="lib/particle.js"></script>
+	
+	<!-- STYLES -->
+	<!-- STYLE LIBRAIRIES -->
+
+			<link rel="stylesheet" type="text/css" href="lib/fontawesome4.7/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="lib/slick1.6/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/slick1.6/slick-theme.css"/>
+		<!-- PERSO -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/about.css">
+		<link rel="stylesheet" type="text/css" href="css/bestof.css">
+		<link rel="stylesheet" type="text/css" href="css/culture.css">
+		<link rel="stylesheet" type="text/css" href="css/education.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
+		<link rel="stylesheet" type="text/css" href="css/home.css">
+		<link rel="stylesheet" type="text/css" href="css/info.css">
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/parallaxe.css">
+		<link rel="stylesheet" type="text/css" href="css/skill.css">
+		<link rel="stylesheet" type="text/css" href="css/techno.css">
+		<link rel="stylesheet" type="text/css" href="css/test.css">
+	
+</head>
+<body>    
+    
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-58796184-5', 'auto');
+	ga('send', 'pageview');
+</script>
+    <!-- FIRST PARALLAXE HEADER DIV -->
+    <div id="home" class="section section-home parallaxe-container-header">
+        <div class="mask"></div>
+        <div class="title">
+        	<div class="img-container"><img src="img/static/logo-06.png" alt="Logo du site" title="Logo du site" /></div>
+            <h1 class="h1">
+                <!-- <span class="title-1">Chef de projet</span><br /> -->
+                <span class="title-2">Développeur&nbsp;Web Full&nbsp;Stack</span><br />
+                <span class="title-3">Casablanca - Maroc</span>
+            </h1>
+            <h2 class="h2">Zakaria BENAATTI</h2>
+            <a onclick="goToTargetId('menu')" href="#menu"><i class="fa fa-chevron-down fa-5x"></i></a>
+        </div>
+        <!-- <img id="mockup_iphone" src="img/header/mockup_iphone.png" alt="" title="" />
+        <img id="mockup_keyboard" src="img/header/mockup_keyboard.png" alt="" title="" /> -->
+    </div>
+
+    <!-- MENU -->
+        <!-- MENU -->
+    <header id="menu">
+        <!--a id="logo" onclick="goToTargetId('home')" href="#home"><img width="50" src="img/static/logo.png" alt="Logo retour accueil" title="Logo" /></a-->
+        <!-- <i onclick="toggleNav()" class="fa fa-bars fa-3x"></i> -->
+        <div onclick="toggleNav()" class="menu-icon"><span></span></div>
+        <nav>
+            <ul>
+                <li><a class="btn-menu" id="btn-menu-home" onclick="goToTargetId('home')" href="#home">ACCUEIL</a></li>
+                <li><a class="btn-menu" id="btn-menu-bestof" onclick="goToTargetId('bestof')" href="#about">BEST OF</a></li>
+                <li><a class="btn-menu" id="btn-menu-about" onclick="goToTargetId('about')" href="#about">À PROPOS</a></li>
+                <li><a class="btn-menu" id="btn-menu-techno" onclick="goToTargetId('techno')" href="#techno">TOP 8 TECHNOS</a></li>
+                <li><a class="btn-menu" id="btn-menu-skill" onclick="goToTargetId('skill')" href="#skill">COMPÉTENCES</a></li>
+                <li><a class="btn-menu" id="btn-menu-education" onclick="goToTargetId('education')" href="#education">FORMATION</a></li>
+                <li><a class="btn-menu" id="btn-menu-culture" onclick="goToTargetId('culture')" href="#culture">CULTURE</a></li>
+                <!-- <li><a class="btn-menu" id="btn-menu-experience" onclick="goToTargetId('experience')" href="#experience">EXPERIENCE</a></li> -->
+                <li><a class="btn-menu" id="btn-menu-contact" onclick="goToTargetId('contact')" href="#contact">CONTACT</a></li>
+                <!-- <li><a class="btn-menu" id="btn-menu-admin" onclick="goToTargetId('admin')" href="#admin">ADMIN</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <!-- VOLET INFOS 1 -->
+    <div class="section section-info info-1">
+        <p>
+            Mon portfolio présente une sélection de mes <strong>derniers projets</strong>.
+        </p>
+    </div>
+
+    <!-- BEST OF -->
+    <div class="section section-bestof">
+        <div id="bestof" class="target-point"></div>
+        <div class="bestof-title">
+            <h2 class="h2 text-center">Réalisations</h2>
+            <p class="first text-center">Projets pro & perso les plus récents</p>
+        </div>
+        
+        <div class="carousel">
+            <!-- Ici on stock tous les projets à montrer -->
+                <div class="content-img">
+                    <div class="ribon">
+                        <span>site web</span>
+                    </div>
+                    <div class="bestof-content">
+                        <div class="left">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/yec/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                                <img src="img/bestof/yec/m.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                            </div>
+                            <p>Conception d'un système de gestion des étudiants du Collège. 
+                                Prise en charge de gerer les étudiants, les professeurs, et les matières, et finalement  la gestion des droits de l'administrateur.
+                            </p>
+                            <p>« Ce projet est trés interessant car m'a permie d'apprendre tout ce qui concerne une preparation d'un projet avant même de le développer cette partie de gestion de projet m'a appris beaucoup de choses. »</p>
+
+                        </div><!-- 
+                     --><div class="right">
+                            <span class="project-title">Système de gestion des étudiants du Collège</span>
+                            <span class="project-year">2020</span>
+                            <span class="project-post">Développeur Web Full stack</span>
+                            <ul><!-- Attention pour que ca ne dépasse pas du cadre, n'afficher que max 20 tehcnos -->
+                                <li>Laravel</li>
+                                <li>Composer</li>
+                                <li>Eloquent</li>
+                                <li>React js</li>
+                                <li>Npm</li>
+                                <li>MySQL</li>
+                                <li>MCD</li>
+                                <li>MVC</li>
+                                <li>jQuery</li>
+                                <li>CSS3</li>
+                                <li>HTML5</li>
+                                <li>RestAPI</li>
+                            </ul>
+                            <!-- <div class="container-btn"><div class="btn"><a href="">En savoir plus</a></div></div> -->
+                        </div><!-- 
+                     --><div class="left-mobile">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/yec/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                                <img src="img/bestof/yec/m.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                            </div>
+                            <p>Conception d'un système de gestion des étudiants du Collège. 
+                                Prise en charge de gerer les étudiants, les professeurs, et les matières, et finalement  la gestion des droits de l'administrateur.
+                            </p>
+                        </div>
+                        <img class="responsive-img" src="img/bestof/yec/m_bottom.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                    </div>
+                </div>
+
+                          
+                <div class="content-img">
+                    <div class="ribon">
+                        <span>Site web</span>
+                    </div>
+                    <div class="bestof-content">
+                        <div class="left">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/port3/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                                <img src="img/bestof/port3/m.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                            </div>
+                            <p>Une toute nouvelle version de mon portfolio.<br />Il regroupe la plupart des technologies et méthodes que je maîtrise.<br />Il a été étudié pour être compatible avec les navigateurs les plus utilisés tels que Google Chrome (version classique et version canary), Safari, Microsoft Edge, Microsoft Internet Explorer, FireFox.</p>
+                            <p>« Une petite remise à neuf ... il le fallait. »</p>
+                        </div><!-- 
+                     --><div class="right">
+                            <span class="project-title">Portfolio v3</span>
+                            <span class="project-year">2020</span>
+                            <span class="project-post">Développeur Web / Designer</span>
+                            <ul><!-- Attention pour que ca ne dépasse pas du cadre, n'afficher que max 20 tehcnos -->
+                                <li>Responsive Design</li>
+                                <li>jQuery</li>
+                                <li>Photoshop</li>
+                                <li>Illustrator</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                            <!-- <div class="container-btn"><div class="btn"><a href="">En savoir plus</a></div></div> -->
+                        </div><!-- 
+                         --><div class="left-mobile">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/port3/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                                <img src="img/bestof/port3/m.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                            </div>
+                            <p>Une toute nouvelle version de mon portfolio.<br />Il regroupe la plupart des technologies et méthodes que je maîtrise.<br />Il a été étudié pour être compatible avec les navigateurs les plus utilisés tels que Google Chrome (version classique et version canary), Safari, Microsoft Edge, Microsoft Internet Explorer, FireFox.</p>
+                            <p>« Une petite remise à neuf ... il le fallait. »</p>
+                        </div>
+                        <img class="responsive-img" src="img/bestof/port3/m_bottom.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                    </div>
+                </div>
+
+
+                <div class="content-img">
+                    <div class="ribon">
+                        <span>Application web</span>
+                    </div>
+                    <div class="bestof-content">
+                        <div class="left">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/port2/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                                <img src="img/bestof/port2/m.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                            </div>
+                            <p>Portfolio regroupant mes expèriences professionnelles, connaissances, projets, ainsi que d'autres informations me concernant.</p>
+                            <p>« Ce projet avait pour but de remplacer l'ancien Portfolio qui n'était plus à jour et pas suffisamment moderne à mon goût. »</p>
+                        </div><!-- 
+                     --><div class="right">
+                            <span class="project-title">Portfolio v2</span>
+                            <span class="project-year">2020</span>
+                            <span class="project-post">Développeur Web</span>
+                            <ul><!-- Attention pour que ca ne dépasse pas du cadre, n'afficher que max 20 tehcnos -->
+                                <li>React js</li>
+                                <li>jQuery</li>
+                                <li>HTML</li>
+                                <li>CSS3</li>
+                                <li>AJAX</li>
+                                <li>Font awesome</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                            <!-- <div class="container-btn"><div class="btn"><a href="">En savoir plus</a></div></div> -->
+                        </div><!-- 
+                     --><div class="left-mobile">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/port2/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                                <img src="img/bestof/port2/m.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                            </div>
+                            <p>Portfolio regroupant mes expèriences professionnelles, connaissances, projets, ainsi que d'autres informations me concernant.</p>
+                            <p>« Ce projet avait pour but de remplacer l'ancien Portfolio qui n'était plus à jour et pas suffisamment moderne à mon goût. »</p>
+                        </div>
+                        <img class="responsive-img" src="img/bestof/port2/m_bottom.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                    </div>
+                </div>
+            
+               
+                <div class="content-img">
+                    <div class="ribon">
+                        <span>Application web</span>
+                    </div>
+                    <div class="bestof-content">
+                        <div class="left">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/gb/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                            </div>
+                            <p>Conception d'un site de commerce des smatphones.</p>
+                            <p>« Projet personnel. »</p>
+                        </div><!-- 
+                     --><div class="right">
+                            <span class="project-title">Site de commerce</span>
+                            <span class="project-year">2020</span>
+                            <span class="project-post">Développeur Web</span>
+                            <ul><!-- Attention pour que ca ne dépasse pas du cadre, n'afficher que max 20 tehcnos -->
+                                <li>REACT JS</li>
+                                <li>jQuery</li>
+                                <li>AJAX</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Paypal Google</li>
+                            </ul>
+                        </div><!-- 
+                     --><div class="left-mobile">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/gb/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                            </div>
+                            <p>Conception d'un site de commerce.</p>
+                            <p>« Projet personnel. »</p>
+                        </div>
+                    </div>
+                </div>
+              
+                
+                <div class="content-img">
+                    <div class="ribon">
+                        <span>Application web</span>
+                    </div>
+                    <div class="bestof-content">
+                        <div class="left">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/edit/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                            </div>
+                            <p>Formulaire permettant de récupérer et stocker en base de données les informations concernant les éditeur partenaires ainsi que leurs bases mises à disposition.</p>
+                            <p>« Cette demande consistait à remplacer la méthode papier par une méthode numérique pour le stockage d'informations des éditeurs et des bases de données, afin d'être géré via l'interface PPE. »</p>
+                        </div><!-- 
+                     --><div class="right">
+                            <span class="project-title">Formulaire d'inscription éditeurs</span>
+                            <span class="project-year">2020</span>
+                            <span class="project-post">Développeur Web</span>
+                            <ul><!-- Attention pour que ca ne dépasse pas du cadre, n'afficher que max 20 tehcnos -->
+                                <li>PHP</li>
+                                <li>jQuery</li>
+                                <li>AJAX</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>MySQL</li>
+                                <li>HeidiSQL</li>
+                                
+                            </ul>
+                            <!-- <div class="container-btn"><div class="btn"><a href="">En savoir plus</a></div></div> -->
+                        </div><!-- 
+                     --><div class="left-mobile">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/edit/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                            </div>
+                            <p>Formulaire permettant de récupérer et stocker en base de données les informations concernant les éditeur partenaires ainsi que leurs bases mises à disposition.</p>
+                            <p>« Cette demande consistait à remplacer la méthode papier par une méthode numérique pour le stockage d'informations des éditeurs et des bases de données. »</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="content-img">
+                    <div class="ribon">
+                        <span>Site web</span>
+                    </div>
+                    <div class="bestof-content">
+                        <div class="left">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/port1/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                                <img src="img/bestof/port1/m.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                            </div>
+                            <p>Site portfolio contenant toutes les informations professionnelles me concernant (projets, langages de programmation, ...).</p>
+                            <p>« Ceci est mon tout premier portfolio online fromscratch. »</p>
+                        </div><!-- 
+                     --><div class="right">
+                            <span class="project-title">Portfolio V1</span>
+                            <span class="project-year">2019</span>
+                            <span class="project-post">Développeur Web</span>
+                            <ul><!-- Attention pour que ca ne dépasse pas du cadre, n'afficher que max 20 tehcnos -->
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                            <!-- <div class="container-btn"><div class="btn"><a href="">En savoir plus</a></div></div> -->
+                        </div><!-- 
+                     --><div class="left-mobile">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/port1/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                                <img src="img/bestof/port1/m.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                            </div>
+                            <p>Site portfolio contenant toutes les informations professionnelles me concernant (projets, langages de programmation, ...).</p>
+                            <p>« Ceci est mon tout premier portfolio online fromscratch. »</p>
+                        </div>
+                        <img class="responsive-img" src="img/bestof/port1/m_bottom.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                    </div>
+                </div>
+
+
+                <div class="content-img">
+                    <div class="ribon">
+                        <span>Conception projet</span>
+                    </div>
+                    <div class="bestof-content">
+                        <div class="left">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/dn/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                                <img src="img/bestof/dn/m.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                            </div>
+                            <p>Analyse et conception d'un projet consiste à concevoir une application informatisé de location des voitures. et de proposer une solution de gestion des clients, des voitures et des contrats d’une agence de location des voitures. Cette application offre les fonctions standards de fonctionnement d’une agence de location des voitures à savoir :
+                                - La gestion des clients
+                                - La gestion des voitures
+                                - La gestion de location.
+                            </p>
+                            <p>« Ce Projet reel m'a permi de bien prendre en main le framwork Laravel 6 ainsi que ORM Eloquent et son template Blade. J'ai pu constater le gain de temps considérable à la conception d'un projet utilisant ce genre de framework. »</p>
+                        </div><!-- 
+                         --><div class="right">
+                            <span class="project-title">Car Rentals</span>
+                            <span class="project-year">2020</span>
+                            <span class="project-post">Développeur Web</span>
+                            <ul><!-- Attention pour que ca ne dépasse pas du cadre, n'afficher que max 20 tehcnos -->
+                                <li>Laravel</li>
+                                <li>MySQL</li>
+                                <li>UML</li>                              
+                                <li>Illustrator</li>
+                                <li>Photoshop</li>
+                                <li>AGILE</li>
+                                <li>Analyse Contexte</li>
+                            </ul>
+                            <!-- <div class="container-btn"><div class="btn"><a href="">En savoir plus</a></div></div> -->
+                        </div><!-- 
+                         --><div class="left-mobile">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/dn/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                                <img src="img/bestof/dn/m.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                            </div>
+                            <p>Analyse et conception d'un projet consiste à concevoir une application informatisé de location des voitures. et de proposer une solution de gestion des clients, des voitures et des contrats d’une agence de location des voitures. Cette application offre les fonctions standards de fonctionnement d’une agence de location des voitures à savoir :
+                                - La gestion des clients
+                                - La gestion des voitures
+                                - La gestion de location.
+                            </p>                            
+                            <p>« Ce Projet reel m'a permi de bien prendre en main le framwork Laravel 6 ainsi que ORM Eloquent et son template Blade. J'ai pu constater le gain de temps considérable à la conception d'un projet utilisant ce genre de framework. »</p>
+                        </div>
+                        <img class="responsive-img" src="img/bestof/dn/m_bottom.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                    </div>
+                </div>
+            
+                
+                <div class="content-img">
+                    <div class="ribon">
+                        <span>Application web</span>
+                    </div>
+                    <div class="bestof-content">
+                        <div class="left">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/bd/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                            </div>
+                            <p>Bibliothèque en ligne permettant de chercher, ajouter, consulter, noter, commenter un livre ou une bande dessinée.</p>
+                            <p>« Ce site était mon premier véritable projet de développement Web. »</p>
+                        </div><!-- 
+                     --><div class="right">
+                            <span class="project-title">BDthèque</span>
+                            <span class="project-year">2019</span>
+                            <span class="project-post">Développeur Web</span>
+                            <ul><!-- Attention pour que ca ne dépasse pas du cadre, n'afficher que max 20 tehcnos -->
+                                <li>PHP</li>
+                                <li>JavaScript</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>MySQL</li>
+                                <li>MERISE</li>
+                                <li>MCD</li>
+                                <li>MLD</li>
+                                <li>MPD</li>
+                            </ul>
+                            <!-- <div class="container-btn"><div class="btn"><a href="">En savoir plus</a></div></div> -->
+                        </div><!-- 
+                     --><div class="left-mobile">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/bd/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                            </div>
+                            <p>Bibliothèque en ligne permettant de chercher, ajouter, consulter, noter, commenter un livre ou une bande dessinée.</p>
+                            <p>« Ce site était le 2ème véritable projet de développement Web. »</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="content-img">
+                    <div class="ribon">
+                        <span>Maquette</span>
+                    </div>
+                    <div class="bestof-content">
+                        <div class="left">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/space/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                                <img src="img/bestof/space/m.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                            </div>
+                            <p>Maquette basée sur les techniques de zoning et la technologie flex (CSS3) pour le placement des éléments en Responsive Design, afin d'optenir la meilleure ergonomie.</p>
+                            <p>« Un entrainement effectué durant ma formation de design. »</p>
+                        </div><!-- 
+                         --><div class="right">
+                            <span class="project-title">Space</span>
+                            <span class="project-year">2019</span>
+                            <span class="project-post">Développeur Front</span>
+                            <ul><!-- Attention pour que ca ne dépasse pas du cadre, n'afficher que max 20 tehcnos -->
+                                <li>Flex</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Responsive Design</li>
+                                <li>Zoning</li>
+                                <li>Maquettage</li>
+                            </ul>
+                            <!-- <div class="container-btn"><div class="btn"><a href="">En savoir plus</a></div></div> -->
+                        </div><!-- 
+                     --><div class="left-mobile">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/space/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                                <img src="img/bestof/space/m.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                            </div>
+                            <p>Maquette basée sur les techniques de zoning et la technologie flex (CSS3) pour le placement des éléments en Responsive Design, afin d'optenir la meilleure ergonomie.</p>
+                            <p>« Un entrainement effectué durant ma formation de design. »</p>
+                        </div>
+                        <img class="responsive-img" src="img/bestof/space/m_bottom.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                    </div>
+                </div>
+
+            
+                <div class="content-img">
+                    <div class="ribon">
+                        <span>Maquette</span>
+                    </div>
+                    <div class="bestof-content">
+                        <div class="left">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/styl/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                            </div>
+                            <p>Conception d'une maquette pour un site internet à l'aide des logiciels Illustrator et Photoshop.</p>
+                            <p>« Très bon entrainement pour moi pour mettre en application mes acquis techniques concernant les deuxx outils d'adobe. »</p>
+                        </div><!-- 
+                         --><div class="right">
+                            <span class="project-title">Maquette Site Design</span>
+                            <span class="project-year">2019</span>
+                            <span class="project-post">Designer</span>
+                            <ul><!-- Attention pour que ca ne dépasse pas du cadre, n'afficher que max 20 tehcnos -->
+                                <li>Photoshop</li>
+                                <li>Illustrator</li>
+                                <li>SVG</li>
+                                <li>Websico</li>
+                                <li>Maquettage</li>
+                            </ul>
+                            <!-- <div class="container-btn"><div class="btn"><a href="">En savoir plus</a></div></div> -->
+                        </div><!-- 
+                     --><div class="left-mobile">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/styl/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                            </div>
+                            <p>Conception d'une maquette pour un site internet à l'aide des logiciels Illustrator et Photoshop.</p>
+                            <p>« Très bon entrainement pour moi pour mettre en application mes acquis techniques concernant les deuxx outils d'adobe. »</p>
+                        </div>
+                    </div>
+                </div>
+
+            
+                <div class="content-img">
+                    <div class="ribon">
+                        <span>Maquette</span>
+                    </div>
+                    <div class="bestof-content">
+                        <div class="left">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/ugc/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                            </div>
+                            <p>« Un entrainement effectué durant ma formation de design. »</p>
+                        </div><!-- 
+                     --><div class="right">
+                            <span class="project-title">Wolf Gang</span>
+                            <span class="project-year">2019</span>
+                            <span class="project-post">Développeur Front</span>
+                            <ul><!-- Attention pour que ca ne dépasse pas du cadre, n'afficher que max 20 tehcnos -->
+                                <li>jQuery</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                            <!-- <div class="container-btn"><div class="btn"><a href="">En savoir plus</a></div></div> -->
+                        </div><!-- 
+                         --><div class="left-mobile">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/ugc/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                            </div>
+                            <p>« Un entrainement effectué durant ma formation de design. »</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="content-img">
+                    <div class="ribon">
+                        <span>Maquette</span>
+                    </div>
+                    <div class="bestof-content">
+                        <div class="left">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/evas/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                            </div>
+                            <p>Maquette effectuée lors de ma formation pour une société de réservation de séjours loisir.</p>
+                            <p><br /></p>
+                        </div><!-- 
+                     --><div class="right">
+                            <span class="project-title">Ila Yoga</span>
+                            <span class="project-year">2019</span>
+                            <span class="project-post">Développeur Web</span>
+                            <ul><!-- Attention pour que ca ne dépasse pas du cadre, n'afficher que max 20 tehcnos -->
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>jQuery</li>
+                                <li>Bootstrap</li>
+                                <li>jQuery</li>
+                            </ul>
+                            <!-- <div class="container-btn"><div class="btn"><a href="">En savoir plus</a></div></div> -->
+                        </div><!-- 
+                         --><div class="left-mobile">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/evas/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                            </div>
+                            <p>Maquette effectuée lors de ma formation à 3W Academy Maroc.</p>
+                            <p><br /></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="content-img">
+                    <div class="ribon">
+                        <span>GS-application web</span>
+                    </div>
+                    <div class="bestof-content">
+                        <div class="left">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/erp/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                                <img src="img/bestof/erp/m.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                            </div>
+                            <p>Conception et développement d’une application de gestion de stock en Java/Jee..</p>
+                            <p>« Projet de fin d'études, pour la validation des acquis de mes deux années de formation pour mon Master d'Informatique et réseaux. »</p>
+                        </div><!-- 
+                     --><div class="right">
+                            <span class="project-title">Gestion des Stocks</span>
+                            <span class="project-year">2019</span>
+                            <span class="project-post">Développeur Web</span>
+                            <ul><!-- Attention pour que ca ne dépasse pas du cadre, n'afficher que max 20 tehcnos -->
+                                <li>JAVA/JEE</li>
+                                <li>Spring</li>
+                                <li>Hibernate</li>
+                                <li>JPA</li>
+                                <li>Apache</li>
+                                <li>Tomcat</li>
+                                <li>MAven</li>
+                                <li>MCD</li>
+                                <li>POO</li>
+                                <li>Netbeans</li>
+                            </ul>
+                            <!-- <div class="container-btn"><div class="btn"><a href="">En savoir plus</a></div></div> -->
+                        </div><!-- 
+                     --><div class="left-mobile">
+                            <div class="bestof-bloc-img">
+                                <img src="img/bestof/erp/d.png" alt="Photo site version desktop" title="Photo site version desktop" />
+                                <img src="img/bestof/erp/m.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                            </div>
+                            <p>Conception fromscratch d'un ERP pour un centre de formation comprennant une partie site Web (public) et une partie intranet (privé) pour les enseignants ainsi que les personnes autorisées (RH, comptabilité, ...).
+                               La partie site Web devait servir à mettre en avant le centre de formation en informant les visiteurs au maximum concernant l'enseigne mais également de passer une candidature.
+                               La partie intranet quant à elle devait servir à la gestion de l'entreprise (gestion des paies, demandes de congés, candidatures, ...).</p>
+                            <p>« Projet de fin d'études, pour la validation des acquis de mes deux années de formation pour mon BAC+4 Administrateur des Systèmes d'Information. »</p>
+                        </div>
+                        <img class="responsive-img" src="img/bestof/erp/m_bottom.png" alt="Photo site version mobile" title="Photo site version mobile" />
+                    </div>
+                </div>
+
+                        <!-- <div class="container-btn"><div class="btn"><a href="">Voir toutes mes réalisations</a></div></div> -->
+        </div>
+        
+    </div>
+
+    <!-- ABOUT -->
+    <div class="section section-about">
+        <div id="about" class="target-point"></div>
+        <div class="maxwidth960">                
+            <div class="desc-about">
+                <div class="left">
+                    <img src="img/about/photo.png" alt="Photo profil" title="Photo profil">
+                </div><!-- 
+             --><div class="right">
+                    <h3>Zakaria BENAATTI,</h3>
+                    <p class="third">
+                        Diplômé d'un Master II Européen FEDE en Technologie de l'information, j'ai également suivi une formation bootcamp de la 3w Academy <strong> Développeur Full Stack</strong> equivalent <strong>d'un bac+2</strong> en France.<br />
+                        De nature perfectionniste, j'aime l'organisation et la gestion de manière générale.<br />
+                    </p>
+                    <p class="objective">
+                    	Mes envies ?<br />Améliorer le confort utilisateur. Enseigner mes connaissances acquises. Concevoir avec innovation.<br />
+                    	Mon ambition ?<br />Manager une équipe. Evolution perpetuelle.
+                    </p>
+                    <div class="container-btn"><div class="btn"><a href="cv.html" class="btn-cv">Télécharger mon CV</a></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VOLET INFOS 2 -->
+    <div class="section section-info info-2">
+        <p>
+            J'ai crée des sites Web alliants sécurité, ergonomie, responsive et référencement <abbr title="Search Engine Optimization (référencement naturel)">SEO</abbr>/<abbr title="Social Media Optimization (référencement via réseaux sociaux)">SMO</abbr></strong>.
+        </p>
+    </div>
+
+    <!-- TECHNO TOP 8 -->
+    <div class="section section-techno">
+        <div class="section-appear-techno">
+            <div id="techno" class="target-point"></div>
+            <h2 class="h2 text-center">Top 8 technologies</h2>
+            <p class="first text-center">Ce que j'utilise le plus</p>
+            <ul class="technos">
+                <!-- Ici on stock toutes les technos -->
+
+                <li data-name="REACT JS" data-percent="70%">
+                    <svg viewBox="-10 -10 220 220">
+                        <g fill="none" stroke-width="20" transform="translate(100,100)">
+                            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="#75b3df"/>
+                            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="#75b3df"/>
+                            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="#75b3df"/>
+                            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="#75b3df"/>
+                            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="#75b3df"/>
+                            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="#75b3df"/>
+                        </g>
+                    </svg> 
+                    <svg class="disable" viewBox="-10 -10 220 220">
+                        <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="629"></path>
+                    </svg> 
+                </li>
+
+                <li data-name="LARAVEL" data-percent="70%">
+                    <svg viewBox="-10 -10 220 220">
+                        <g fill="none" stroke-width="20" transform="translate(100,100)">
+                            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="#75b3df"/>
+                            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="#75b3df"/>
+                            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="#75b3df"/>
+                            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="#75b3df"/>
+                            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="#75b3df"/>
+                            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="#75b3df"/>
+                        </g>
+                    </svg> 
+                    <svg class="disable" viewBox="-10 -10 220 220">
+                        <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="629"></path>
+                    </svg> 
+                </li>
+                
+                    <li data-name="PHP" data-percent="80%">
+                        <svg viewBox="-10 -10 220 220">
+                            <g fill="none" stroke-width="20" transform="translate(100,100)">
+                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="#75b3df"/>
+                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="#75b3df"/>
+                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="#75b3df"/>
+                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="#75b3df"/>
+                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="#75b3df"/>
+                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="#75b3df"/>
+                            </g>
+                        </svg> 
+                        <svg class="disable" viewBox="-10 -10 220 220">
+                            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="629"></path>
+                        </svg> 
+                    </li>
+
+                
+                    <li data-name="MySQL" data-percent="90%">
+                        <svg viewBox="-10 -10 220 220">
+                            <g fill="none" stroke-width="20" transform="translate(100,100)">
+                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="#46d6b7"/>
+                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="#46d6b7"/>
+                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="#46d6b7"/>
+                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="#46d6b7"/>
+                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="#46d6b7"/>
+                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="#46d6b7"/>
+                            </g>
+                        </svg> 
+                        <svg class="disable" viewBox="-10 -10 220 220">
+                            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="565"></path>
+                        </svg> 
+                    </li>
+
+                    <li data-name="JAVA JEE" data-percent="50%">
+                        <svg viewBox="-10 -10 220 220">
+                            <g fill="none" stroke-width="20" transform="translate(100,100)">
+                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="#75b3df"/>
+                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="#75b3df"/>
+                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="#75b3df"/>
+                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="#75b3df"/>
+                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="#75b3df"/>
+                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="#75b3df"/>
+                            </g>
+                        </svg> 
+                        <svg class="disable" viewBox="-10 -10 220 220">
+                            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="629"></path>
+                        </svg> 
+                    </li>
+                
+                    <li data-name="CSS3" data-percent="75%">
+                        <svg viewBox="-10 -10 220 220">
+                            <g fill="none" stroke-width="20" transform="translate(100,100)">
+                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="#46d6b7"/>
+                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="#46d6b7"/>
+                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="#46d6b7"/>
+                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="#46d6b7"/>
+                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="#46d6b7"/>
+                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="#46d6b7"/>
+                            </g>
+                        </svg> 
+                        <svg class="disable" viewBox="-10 -10 220 220">
+                            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="528"></path>
+                        </svg> 
+                    </li>
+
+                
+                    <li data-name="HTML5" data-percent="85%">
+                        <svg viewBox="-10 -10 220 220">
+                            <g fill="none" stroke-width="20" transform="translate(100,100)">
+                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="#46d6b7"/>
+                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="#46d6b7"/>
+                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="#46d6b7"/>
+                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="#46d6b7"/>
+                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="#46d6b7"/>
+                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="#46d6b7"/>
+                            </g>
+                        </svg> 
+                        <svg class="disable" viewBox="-10 -10 220 220">
+                            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="520"></path>
+                        </svg> 
+                    </li>
+                
+                    <li data-name="JavaScript" data-percent="77%">
+                        <svg viewBox="-10 -10 220 220">
+                            <g fill="none" stroke-width="20" transform="translate(100,100)">
+                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="#2cc983"/>
+                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="#2cc983"/>
+                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="#2cc983"/>
+                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="#2cc983"/>
+                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="#2cc983"/>
+                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="#2cc983"/>
+                            </g>
+                        </svg> 
+                        <svg class="disable" viewBox="-10 -10 220 220">
+                            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="484"></path>
+                        </svg> 
+                    </li>
+                            </ul>
+            
+            <div class="container-btn"><div class="btn"><a href="techno.html" class="btn-techno">Voir plus de technos</a></div></div>
+        </div>
+    </div>
+
+    <!-- SKILL -->
+    <div class="section section-skill parallaxe-container-skill">
+        <div class="section-appear-skill">
+            <div id="skill" class="target-point"></div>
+            <div class="maxwidth1200">
+                <h2 class="h2 text-center">Compétences</h2>
+                <p class="first text-center">Mon savoir-faire</p>
+                <div class="bloc-container">
+                    <!-- Ici on va generer dynamiquement les 6 div contenant les competences en BDD -->
+                    
+                            <div class="skill-bloc first">
+                                <span>Gestion de Projet Web</span>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <p>Analyse du contexte, cahier des charges, devis, SWOT, gestion planning et budget, répartition des charges et tâches d'un projet, Gantt. Connaissances de base méthode AGILE (SCRUM)<br /></p>
+                            </div><!-- 
+                         -->
+                            <div class="skill-bloc first">
+                                <span>Développement Backend</span>
+                                <i class="fa fa-code-fork" aria-hidden="true"></i>
+                                <p>Utilisation de GIT. Maitrise PHP, JAVA, POO, MySQL, Apache. Connaissance Framework  Laravel. Spring Boot. Sécurisation des données.<br /></p>
+                            </div><!-- 
+                         -->
+                            <div class="skill-bloc first">
+                                <span>UX Design</span>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <p>Techniques de référencement SEO et SMO, Personas, Benchmark, Zoning, Wireframes, Ergonomie. Outils conception Desgin Photoshop, Illustrator, After Effect</p>
+                            </div><!-- 
+                         -->
+                            <div class="skill-bloc first">
+                                <span>Développement Frontend</span>
+                                <i class="fa fa-code" aria-hidden="true"></i>
+                                <p>Recherche de concept Design, maquettage, JavaScript, React js  jQuery, API Google. Excellente connaissance de HTML5, CSS3. Connaissance de la librairie CSS Bootstrap Twitter.</p>
+                            </div><!-- 
+                         -->                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section section-education parallaxe-container-education">
+        <div class="section-appear-education">
+            <div id="education" class="target-point"></div>
+            <div class="mask"></div>
+            <h2 class="h2 text-center">Diplômes</h2>
+            <p class="first text-center">Mon parcours de formation</p>
+            <!-- Ici on va generer dynamiquement les div contenant les diplomes en BDD -->
+            <div class="bloc-container maxwidth960">
+            
+                            <div class="education-bloc">
+                            <span>2015</span>
+                            <p>Licence Fondamentale - Economie et Gestion - <a href="http://www.univh2c.ma/" title="Site univh2c">UNIVERSITE HASSAN II AIN CHOCK</a></p>
+                            <span><strong> Casablanca </strong></span>
+                        </div><!-- 
+                     -->
+                            <div class="education-bloc">
+                            <span>2019</span>
+                            <p>Master II Européen FEDE - Technologie de l'information <br> - <a href="http://cesasup.ma/" title="Site CESA SUP">CESA SUP</a> </p>
+                            <span><strong> Casablanca</strong></span>
+                        </div><!-- 
+                     -->
+                            <div class="education-bloc">
+                            <span>2020</span>
+                            <p>Certification - Developpeur Full Stack <br> - <a href="http://www.3wa.ma/" title="Site 3w Academy Maroc">3w Academy Maroc</a></p>
+                            <span><strong>Casablanca</strong></span>
+                        </div><!-- 
+                     -->            </div>
+        </div>
+    </div>
+
+    <!-- VOLET INFOS 3 -->
+    <div class="section section-info info-3">
+        <p>
+            Mon niveau en <strong>anglais</strong> notion de base<br />
+        </p>
+    </div>
+
+    <!-- CULTURE -->
+    <div class="section section-culture">
+        <div id="culture" class="target-point"></div>
+        
+        <div id="particles-js"></div>
+        <div>
+            <h2 class="text-center h2">Culture & Divertissements</h2>
+            <p class="first text-center">Mes principaux centres d'interêt</p>
+            <!-- BLOC CONTENANT LES BULLES DE CENTRES D'INTERET -->
+            <div id="bubble-container">
+                                        
+                            <div class="bubble"><img src="img/culture/bubble/voyage.jpg" alt="Voyage et culture" title="Voyage & culture" /></div>
+                                                
+                            <div class="bubble"><img src="img/culture/bubble/arch.jpg" alt="Architecture moderne" title="Architecture moderne" /></div>
+                                                                                                                                                                                                                        
+                            <div class="bubble"><img src="img/culture/bubble/holo.jpg" alt="Hi-Tech - informatique et nouvelles technologies" title="Hi-Tech - informatique & nouvelles technologies" /></div>
+                        
+                            <div class="bubble"><img src="img/culture/bubble/dev.jpg" alt="Développement - sites internet et applications" title="Développement - sites internet & applications" /></div>
+                        
+                            <div class="bubble"><img src="img/culture/bubble/tesla.jpg" alt="Tesla" title="Tesla" /></div>
+                        
+                            <div class="bubble"><img src="img/culture/bubble/eco.jpg" alt="Ecologie - développement durable" title="Ecologie - développement durable" /></div>
+                        
+                            <div class="bubble"><img src="img/culture/bubble/planet.jpg" alt="Planètes, univers et sciences" title="Planètes, univers & sciences" /></div>
+                        
+                            <div class="bubble"><img src="img/culture/bubble/canada.jpg" alt="Canada" title="Canada" /></div>
+                                                
+                            <div class="bubble"><img src="img/culture/bubble/google.jpg" alt="Google" title="Google" /></div>
+                                                
+                            <div class="bubble"><img src="img/culture/bubble/city.jpg" alt="City skyline - jeu vidéo (construction ville)" title="City skyline - jeu vidéo (construction ville)" /></div>
+                        
+                        
+                                    </div>
+        </div>
+    </div>
+
+    <!-- VOLET INFOS 4 -->
+    <div class="section section-info info-4">
+        <p>
+            &lt;&lt; <strong>Diversité</strong>, <strong>innovation</strong> et <strong>simplicité</strong> sont mes <strong>forces</strong>. &gt;&gt;
+        </p>
+    </div>	<footer id="contact">
+		<!-- CONTACT -->
+		<div class="section section-contact maxwidth960">
+			<h2 class="h2 text-center">Contact</h2>
+			<form method="post" action="https://zakaria-b.com/email">
+				<div class="left">
+					<input name="name" type="text" placeholder="Elise Durand (obligatoire)" value="" title="Nom et/ou prénom (obligatoire)
+Les caractères autorisés sont les lettres ainsi que les lettres avec accents, les tirets, les apostrophes et les espaces" required="required" pattern="[\wéàçèëöêïîâùûô\-'\s]{2,50}" />
+					<input name="email" type="email" placeholder="e.durand@mail.com (obligatoire)" value="" title="Email (obligatoire)" required="required" pattern="[\d\w._%+-]+@[\d\w.-]+\.[A-z]+" />
+					<input name="subject" type="text" placeholder="Demande d'informations (obligatoire)" value="" title="Sujet (obligatoire)
+Les caractères autorisés sont les lettres ainsi que lettres avec accents, chiffres, tirets, apostrophes, +, =, :, ;, parenthèses, crochets et espaces" required="required" pattern="[\d\w\s()\[\]=\+.:;,'\-éàçèëöêïîâùûô]*" />
+				</div><!-- 
+			 --><div class="right">
+					<textarea name="message" placeholder="Bonjour, je souhaite vous contacter au sujet de ..." title="Message (obligatoire)
+Certains caractères spéciaux tels que les balises ouvrantes ou fermantes ou encore les '&' ne sont pas autorisés" required="required"></textarea>
+					<input type="submit" value="Envoyer" />
+				</div>
+			</form>
+		</div>
+		<div id="social-network">
+			<ul>
+				<li><a href="https://www.linkedin.com/in/zakaria-benaatti-35a16517a/" title="Voir ma page LinkedIn">in</a></li>
+				<li>Vous êtes le <span id="visitor-cpt">1000 ème</span> visiteur depuis <span id="visitor-firstdate">1035 jours</span></li>
+			</ul>
+		</div>
+		<div id="signature">
+			<p> <strong>Développeur&nbsp;Web Full&nbsp;Stack</strong> - <strong>Casablanca</strong> | <strong>Maroc</strong> </p>
+			<p>© 2020 par Zakaria BENAATTI | <a href="#">Mentions&nbsp;légales</a> | <a href="#">Plan&nbsp;du&nbsp;site</a></p>
+		</div>
+	</footer>
+ 	
+ 	<a id="totop" onclick="goToTargetId('home'); $(this).hide();" href="#home"><div><i class="fa fa-chevron-up fa-1x"></i></div></a>
+
+ 	<div id="notif-div"></div>
+ 	<div id="erreur-div"></div>
+
+ 	<!-- SCRIPT JS - ONLOAD & FUNCTIONS -->
+	<script type="text/javascript" src="scripts/function.js"></script>
+ 		<script type="text/javascript" src="scripts/init.js"></script>
+	</body>
+
+<!-- Mirrored from florian-g.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Feb 2020 10:26:42 GMT -->
+</html>

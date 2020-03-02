@@ -1,0 +1,304 @@
+	/* DEBUT BOUTON TOP */
+	#totop {
+		display: none;
+		z-index: 100;
+		position: fixed;
+		bottom: 8px;
+		right: 10px;
+		width: 50px;
+		height: 50px;
+	}
+	#totop div {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		background-color: #151718;
+		color: gray;
+	    text-align: right;
+	    overflow: hidden;
+		-webkit-transition: background-color 0.2s, color 0.2s;
+		transition: background-color 0.2s, color 0.2s;
+	}
+	#totop div:hover {
+		background-color: #6997b1;
+		color: white;
+		-webkit-transition: background-color 0.2s, color 0.2s;
+		transition: background-color 0.2s, color 0.2s;
+		/* Animation bounce */
+		-webkit-animation: bounceMargin 0.5s ease-in-out;
+		animation: bounceMargin 0.5s ease-in-out;
+	}
+	#totop div i {
+		position: absolute;
+		right: 16px;
+		bottom: 17px; 
+	}
+	@-webkit-keyframes bounceMargin {
+	    from {margin: 0;}
+	    30%  {margin: -10px;}
+	    50%  {margin: 3px;}
+	    75%  {margin: -8px;}
+	    85%  {margin: 1px;}
+	    93%  {margin: -3px;}
+	    to   {margin: 0;}
+	}
+	@keyframes bounceMargin {
+	    from {margin: 0;}
+	    30%  {margin: -10px;}
+	    50%  {margin: 3px;}
+	    75%  {margin: -8px;}
+	    85%  {margin: 1px;}
+	    93%  {margin: -3px;}
+	    to   {margin: 0;}
+	}
+	/* FIN BOUTON TOP */
+	footer {
+		background-color: #111213;
+	}
+	footer div {
+		text-align: center;
+		padding: 50px 0;
+		color: #383d40;
+	}
+	.section-contact {
+		width: 80%;
+		min-width: 300px;
+		margin: 0 auto;
+		position: relative;
+		padding-top: 150px;
+	}
+	.section-contact form {
+		padding-top: 50px;
+	}
+	.section-contact .left, .section-contact .right {
+		width: 50%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.section-contact .left {
+		padding-right: 5px;
+	}
+	.section-contact .right {
+		padding-left: 5px;
+		text-align: right;
+	}
+	.section-contact div * {
+	    font-weight: 300;
+	    font-size: 20px;
+		background-color: #232628; /* 151718 */
+		color: #fff;
+	}
+	.section-contact input, .section-contact textarea {
+		width: 100%;
+	    padding: 8px 15px;
+	    margin-bottom: 10px;
+		-webkit-transition-duration: 0.2s;
+	    transition-duration: 0.2s;
+	    outline: none;
+	}
+	.section-contact input:focus, .section-contact textarea:focus {
+		background-color: #383d40;/* 444a4d 383d40*/
+		-webkit-transition-duration: 0.2s;
+	    transition-duration: 0.2s;
+	}
+	.section-contact .right textarea {
+		height: 90px;
+		display: block;
+		border: none;
+	    resize: none;
+	}
+	.section-contact .right input[type=submit] {
+		width: auto;
+		cursor: pointer;
+	    background-color: #6997b1;
+	    color: #fff;
+	    display: inline-block;
+    	font-weight: 400;
+		-webkit-transition-duration: 0.2s;
+	    transition-duration: 0.2s;
+	}
+	.section-contact .right input[type=submit]:hover {
+	    background-color: #365568;
+	    color: #c3c8d6;
+		-webkit-transition-duration: 0.3s;
+	    transition-duration: 0.3s;
+	}
+
+	#social-network *, #signature * {
+		font-weight: 400;
+	}
+	/* RESEAUX */
+	#social-network ul {
+		/*height: 150px;*/
+		perspective: 1000px;
+		position: relative;
+	}/*
+	#social-network ul li:hover {
+		
+		animation: social-appear 1s;
+	}*/
+	/*@keyframes social-appear {
+		/*0% { transform: rotateX(-10deg) translateY(-10%) rotateX(50deg) rotateZ(50deg); }*//*
+		0% { transform: rotateX(-10deg) translateY(-10%) rotateX(50deg); /*width: 0; height: 0;*//*}
+		30% { transform: rotateX(0deg) translateY(0%) rotateX(0deg); width: 100px; height: 100px; }
+		40% { width: 180px; height: 170px; }
+		50% { width: 145px; height: 155px; }
+		60% { width: 160px; height: 155px; }
+		68% { width: 145px; height: 160px; }
+		74% { width: 155px; height: 145px; }
+		78% { width: 148px; height: 155px; }
+	}*/
+	/*
+	#social-network ul li.hidden:after {
+		top: -100%;
+		left: 0px;
+		width: 150px;
+		height: 100%;
+		height: -webkit-calc(100% - 35px);
+		height: calc(100% - 35px);
+		font-size: 20px;
+    	font-weight: 800;
+    	padding-top: 35px;
+		position: absolute;
+	    background-color: #6997b1;
+	    color: #fff;
+	    border-radius: 50%;
+		content: 'Visitez ma page';
+		transform-origin: left bottom;
+		transform: rotateX(90deg);
+	}*/
+	#social-network ul li:not(:nth-child(2)) {
+		transform-origin: center center;
+		vertical-align: top;
+		position: relative;
+		height: 150px;
+	    width: 150px;
+	    padding: 0;
+	    background-color: #6997b1;
+	    color: #fff;
+	    border-radius: 50%;
+	}
+	#social-network ul li:not(:nth-child(2)).active {
+		-webkit-animation: bubble-appear 0.5s;
+		animation: bubble-appear 0.5s;
+		-webkit-transition-duration: 0.2s;
+	    transition-duration: 0.2s;
+	}
+	#social-network ul li:not(:nth-child(2)).hidden {
+		width: 0;
+		height: 0;
+	}
+	#social-network ul li:not(:nth-child(2)):hover {
+	    background-color: #365568;
+		-webkit-transition-duration: 0.2s;
+	    transition-duration: 0.2s;
+	}
+	#social-network ul li:not(:nth-child(2)) a {
+		transform-origin: center center;
+		display: inline-block;
+		position: relative;
+		color: #c3c8d6;
+		width: 100%;
+		height: 100%;
+		height: -webkit-calc(100% - 35px);
+		height: calc(100% - 35px);
+		font-size: 60px;
+    	font-weight: 800;
+    	padding-top: 35px;
+	}
+	#social-network ul li:not(:nth-child(2)) a.active {
+	    -webkit-animation: bubble-appear 0.5s;
+	    animation: bubble-appear 0.5s;
+		-webkit-transition-duration: 0.2s;
+	    transition-duration: 0.2s;
+	}
+	#social-network ul li:not(:nth-child(2)) a.hidden {
+	    color: #c3c8d6;
+	    font-size: 0;
+	}
+	#social-network ul li:nth-child(2) {
+		text-transform: uppercase;
+		font-weight: 900;
+		font-size: 40px;
+		padding: 0 50px;
+		max-width: 450px;
+		vertical-align: top;
+		text-align: left;
+	}
+	#visitor-cpt, #visitor-firstdate {
+		color: #fff;
+		font-weight: bolder;
+	}
+	/* Cette animation a été remplacée par celle de la section culture (bien plus simple et efficace) */
+	/*
+	@-webkit-keyframes social-appear {
+		0%	{ width: 0; height: 0; margin-left: 75px; margin-top: 75px; }
+		50% { width: 180px; height: 180px; margin-left: -15px; margin-top: -15px; }
+		70% { width: 140px; height: 140px; margin-left: 5px; margin-top: 5px; }
+		80% { width: 165px; height: 155px; margin-left: -7.5px; margin-top: -2.5px; }
+		90% { width: 150px; height: 145px; margin-left: 0; margin-top: 2.5px; }
+		95% { width: 155px; height: 152px; margin-left: -2.5px; margin-top: -1px; }
+	}
+	@keyframes social-appear {
+		0%	{ width: 0; height: 0; margin-left: 75px; margin-top: 75px; }
+		50% { width: 180px; height: 180px; margin-left: -15px; margin-top: -15px; }
+		70% { width: 140px; height: 140px; margin-left: 5px; margin-top: 5px; }
+		80% { width: 165px; height: 155px; margin-left: -7.5px; margin-top: -2.5px; }
+		90% { width: 150px; height: 145px; margin-left: 0; margin-top: 2.5px; }
+		95% { width: 155px; height: 152px; margin-left: -2.5px; margin-top: -1px; }
+	}
+	@-webkit-keyframes social-appear-a {
+		0% { font-size: 0; opacity: 0; }
+		49% { opacity: 1; }
+		50% { font-size: 70px; margin-top: -5px; margin-left: -5px; }
+		70% { font-size: 50px; margin-top: 2.5px; margin-left: 2.5px; }
+		80% { font-size: 65px; margin-top: -7.5px; margin-left: -7.5px; }
+		90% { font-size: 58px; margin-top: 1px; margin-left: 1px; }
+		95% { font-size: 62px; margin-top: -1px; margin-left: -1px; }
+	}
+	@keyframes social-appear-a {
+		0% { font-size: 0; opacity: 0; }
+		49% { opacity: 1; }
+		50% { font-size: 70px; margin-top: -5px; margin-left: -5px; }
+		70% { font-size: 50px; margin-top: 2.5px; margin-left: 2.5px; }
+		80% { font-size: 65px; margin-top: -7.5px; margin-left: -7.5px; }
+		90% { font-size: 58px; margin-top: 1px; margin-left: 1px; }
+		95% { font-size: 62px; margin-top: -1px; margin-left: -1px; }
+	}*/
+
+	/* SIGNATURE */
+	#signature {
+	}
+
+	@media screen and (max-width: 1170px) {
+		.section-contact {
+			padding-top: 50px;
+		}
+	}
+	@media screen and (max-width: 600px) {
+		footer {
+			padding-bottom: 50px;
+		}
+		footer div {
+    		padding: 0;
+		}
+		.section-contact .left, .section-contact .right {
+		    width: 100%;
+		    display: block;
+		    padding: 0;
+		}
+		#signature {
+			padding-top: 20px;
+		}
+		#totop div {
+			background-color: rgba(0,0,0,0.5);
+			color: white;
+			/*border: 1px solid gray;*/
+		}		
+		#social-network ul li:nth-child(2) {
+		    font-size: 30px;
+		    padding: 30px 0 30px;
+		    text-align: center;
+		}
+	}

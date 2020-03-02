@@ -1,0 +1,152 @@
+	/** DEBUT EDUCATION **/
+	.section-education * {
+	    font-weight: 300;
+		color: rgba(255,255,255,0.7);
+	}
+	.section-education {
+		padding: 0 0 200px;
+		position: relative; /* pour que le mask filter se place dans cette div et non dans la div header */
+		text-align: center;
+	}
+	.section-education .target-point {
+		height: 208px;
+	}
+	.section-education .bloc-container {
+		display: flex;
+		justify-content: stretch;
+		align-items: stretch;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		text-align: center;
+	}
+	.section-education .education-bloc {
+		position: relative;
+		opacity: 0;
+		width: 200px;
+		text-align: center;
+		display: inline-block;
+		vertical-align: top;
+		padding: 20px;
+	}
+	.section-education .education-bloc.inTop {
+		opacity: 1;
+		animation: moveBlocInTop 0.5s;
+	}
+	.section-education .education-bloc.inBottom {
+		opacity: 1;
+		animation: moveBlocInBottom 0.5s;
+	}
+	.section-education .education-bloc.out {
+		/*top: -500px; */
+		opacity: 0;
+	}
+	/*.section-education .education-bloc.outBottom {
+		bottom: -500px; 
+		opacity: 0;
+	}*/
+	.section-education .education-bloc * {
+		display: block;
+		font-weight: 400;
+		color: rgba(255,255,255,0.7);
+	}
+	.section-education .education-bloc span:nth-child(1) {
+		font-size: 25px;
+		width: 60%;
+	    padding-bottom: 10px;
+	    margin: 0 auto;
+	    border-bottom: 1px solid rgba(255,255,255,0.2);
+	}
+	.section-education .education-bloc span:nth-child(2) {
+		font-size: 15px;
+	}
+	.section-education .education-bloc p {
+		font-size: 15px;
+		padding: 0 5px 10px;
+		line-height: 1.5;
+	}
+	.section-education .mask {
+		position: absolute;
+	    z-index: -1;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    opacity: 0.2;
+	    background-color: black;
+	}
+	@-webkit-keyframes moveBlocInTop {
+		0% {top:-500px; opacity:0;}
+		100% {top:0px; opacity:1;}
+	}
+	@-moz-keyframes moveBlocInTop {
+		0% {top:-500px; opacity:0;}
+		100% {top:0px; opacity:1;}
+	}
+	@keyframes moveBlocInTop {
+		0% {top:-500px; opacity:0;}
+		100% {top:0px; opacity:1;}
+	}
+	@-webkit-keyframes moveBlocInBottom {
+		0% {bottom:-500px; opacity:0;}
+		100% {bottom:0px; opacity:1;}
+	}
+	@-moz-keyframes moveBlocInBottom {
+		0% {bottom:-500px; opacity:0;}
+		100% {bottom:0px; opacity:1;}
+	}
+	@keyframes moveBlocInBottom {
+		0% {bottom:-500px; opacity:0;}
+		100% {bottom:0px; opacity:1;}
+	}
+	/*@-webkit-keyframes moveBlocOutLeft {
+		0% {margin-left:0px; opacity:1;}
+		100% {margin-left:-500px; opacity:0;}
+	}
+	@-moz-keyframes moveBlocOutLeft {
+		0% {margin-left:0px; opacity:1;}
+		100% {margin-left:-500px; opacity:0;}
+	}
+	@keyframes moveBlocOutLeft {
+		0% {margin-left:0px; opacity:1;}
+		100% {margin-left:-500px; opacity:0;}
+	}*/
+	/*@-webkit-keyframes moveBlocOutRight {
+		0% {margin-right:0px; opacity:1;}
+		100% {margin-right:-500px; opacity:0;}
+	}
+	@-moz-keyframes moveBlocOutRight {
+		0% {margin-right:0px; opacity:1;}
+		100% {margin-right:-500px; opacity:0;}
+	}
+	@keyframes moveBlocOutRight {
+		0% {margin-right:0px; opacity:1;}
+		100% {margin-right:-500px; opacity:0;}
+	}*/
+
+	@media screen and (max-width: 1170px) {
+		.section-education {
+			padding-bottom: 80px;
+		}
+		.section-education .target-point {
+			height: 58px;
+		}
+	}
+	@media screen and (max-width: 900px) {
+		.section-education {
+			padding-bottom: 50px;
+		}
+	}
+	@media screen and (max-width: 600px) {
+		.section-education .first {
+			margin-bottom: 30px;
+		}
+		.section-education .education-bloc {
+			width: 50%;
+			margin-bottom: 30px;
+			padding: 5px;
+		}
+		.section-education .education-bloc {
+			padding: 0;
+		}
+	}
+	/** FIN EDUCATION **/

@@ -1,0 +1,175 @@
+	/** DEBUT ABOUT **/
+	.section-about {
+		/*min-height: 620px;*/
+		min-height: 675px;
+		background-color: #1379b6;
+		color: #2f3238;
+	    padding: 0 20px;
+	    position: relative;
+	    overflow: hidden;
+	}
+	.section-about strong {
+		color: rgba(255,255,255,0.7) !important;
+	}
+	.section-about .target-point {
+		/*height: 158px;*/
+		/*height: 100px;*/
+		height: 60px;
+	}
+	.section-about * {
+	    font-weight: 300;
+		color: rgba(255,255,255,0.7);
+	    /*text-shadow: 1px 1px 1px #1379b6, -1px 1px 1px #1379b6, 1px -1px 1px #1379b6, -1px -1px 1px #1379b6;*/
+	}
+	.section-about div a {
+	    text-shadow: none;
+	}
+	.section-about > div {
+		position: relative;
+		z-index: 0;
+	}
+	.section-about div {
+	    /*margin: 0 auto;*/
+	    top: 13%;
+	}
+	.section-about div h3 {
+	    font-size: 30px;
+	    margin-top: 0;
+		text-align: left;
+	}
+	.section-about div .third {
+	    text-align: left;
+	    font-size: 1.2rem;
+	}
+	.desc-about {
+		display: flex;
+		justify-content: space-around;
+		align-items: stretch;
+		align-content: stretch;
+		flex-flow: row wrap;
+		position: relative;
+	}
+	.section-about div .btn {
+		text-align: right;
+	}
+	.section-about div #dot {
+		height: 1px;
+		width: 1px;
+	}
+	.section-about div .left, .section-about .right {
+		margin-top: 0;
+		vertical-align: top;
+		display: inline-block;
+		min-width: 320px;
+	}
+	.section-about div .left {
+		min-width: 100px;
+    	width: 200px;
+    	height: 200px;/*
+		border-radius: 50%;
+		background-color: black;*/
+		z-index: -1;
+		margin: 0 20px 20px 20px;
+	}
+	.section-about div .left img {
+		float: left;
+		width: 100%;
+	}
+	.section-about div .left img.in {
+		-webkit-animation: movePictureIn 0.5s;
+		-moz-animation: movePictureIn 0.5s;
+		-ms-animation: movePictureIn 0.5s;
+		-o-animation: movePictureIn 0.5s;
+		animation: movePictureIn 0.5s;
+	}
+	.section-about div .left img.out {
+		opacity: 0;
+		-webkit-animation: movePictureOut 0.5s;
+		-moz-animation: movePictureOut 0.5s;
+		-ms-animation: movePictureOut 0.5s;
+		-o-animation: movePictureOut 0.5s;
+		animation: movePictureOut 0.5s;
+	}
+	.section-about div .right {
+		width: 70%;
+	}
+	.objective {
+		font-family: 'Gloria Hallelujah';
+		font-weight: 300;
+    	padding-right: 10px;
+    	text-align: right;
+    	line-height: 1.3;
+	}
+	@-webkit-keyframes movePictureIn {
+		0% {margin-left:-500px; opacity:0;}
+		100% {margin-left:0px; opacity:1;}
+	}
+	@-moz-keyframes movePictureIn {
+		0% {margin-left:-500px; opacity:0;}
+		100% {margin-left:0px; opacity:1;}
+	}
+	@keyframes movePictureIn {
+		0% {margin-left:-500px; opacity:0;}
+		100% {margin-left:0px; opacity:1;}
+	}
+	@-webkit-keyframes movePictureOut {
+		0% {margin-left:0px; opacity:1;}
+		100% {margin-left:-500px; opacity:0;}
+	}
+	@-moz-keyframes movePictureOut {
+		0% {margin-left:0px; opacity:1;}
+		100% {margin-left:-500px; opacity:0;}
+	}
+	@keyframes movePictureOut {
+		0% {margin-left:0px; opacity:1;}
+		100% {margin-left:-500px; opacity:0;}
+	}
+	@media screen and (min-width: 900px) {
+		.section-about {
+			height: 80%;
+		}
+	}
+	@media screen and (max-width: 1170px) {
+	}
+	@media screen and (max-width: 900px) {
+		.section-about div .third {
+			font-size: 16px;
+		}
+		.section-about {
+			min-height: 730px;
+		}
+		.section-about .target-point {
+			height: 58px;
+		}
+		.section-about div .left {
+			/*top: 0;
+		    height: 100px;
+		    width: 100px;*/
+		}
+	}
+	@media screen and (max-width: 800px) {
+		.section-about {
+			height: auto !important;
+		}
+	}
+	@media screen and (max-width: 600px) {
+		.section-about {
+			min-height: 710px;
+		}
+		.section-about .first {
+			margin-bottom: 30px;
+		}
+		.section-about div {
+		    top: 6%;
+		}
+		.section-about div h3 {
+	    	font-size: 25px;	
+		}
+		.section-about div .left {
+			margin: 0;
+		}
+		.section-about div .third, .objective {
+	    	font-size: 15px;	
+		}
+	}
+	/** FIN ABOUT **/

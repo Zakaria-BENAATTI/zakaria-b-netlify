@@ -1,0 +1,131 @@
+	/** DEBUT SKILL **/
+	.section-skill * {
+	    font-weight: 300;
+	}
+	.section-skill {
+		background-color: #1379b6;
+		color: rgba(255,255,255,0.7);
+		padding: 0 0 100px;
+		position: relative; /* pour que le mask filter se place dans cette div et non dans la div header */
+		text-align: center;
+	}
+	.section-skill .target-point {
+		height: 158px;
+	}
+	.section-skill .skill-bloc.in {
+		opacity: 1;
+		/*-webkit-animation-fill-mode: forwards;
+    	animation-fill-mode: forwards;*/
+		-webkit-animation: fadeIn 0.5s;
+		-moz-animation: fadeIn 0.5s;
+		animation: fadeIn 0.5s;
+	}
+	.section-skill .skill-bloc.out {
+		opacity: 0;
+	}
+	.section-skill .skill-bloc {
+		opacity: 0;
+		width: 400px;
+		max-width: 400px;
+		text-align: center;
+		height: 360px;
+		display: inline-block;
+		vertical-align: top;
+		padding: 20px 10px;
+		/*background-color: rgba(255,255,255,0.2);*/
+		margin: 0 20px 10px 20px;
+	}
+	.section-skill .skill-bloc * {
+		display: block;
+		font-weight: 400;
+	}
+	.section-skill .skill-bloc span {
+		font-size: 23px;
+		color: #26292e;
+	}
+	.section-skill .skill-bloc i {
+		color: #26292e;
+		font-size: 55px;
+	    position: relative;
+	    top: 14px;
+	    height: 55px;
+	}
+	.section-skill .skill-bloc p {
+		display: block;
+		font-size: 15px;
+		padding: 15px 5px 10px;
+		line-height: 1.5;
+		/*text-align: justify;*/
+	}
+	.skill-bloc.last {
+		margin-bottom: 30px;
+	}
+	@-webkit-keyframes fadeIn {
+		0% {opacity:0;}
+	}
+	@-moz-keyframes fadeIn {
+		0% {opacity:0;}
+	}
+	@keyframes fadeIn {
+		0% {opacity:0;}
+	}
+
+	@media screen and (max-width: 1170px) {
+		.section-skill {
+			padding-bottom: 20px;
+		}
+		.section-skill .target-point {
+			height: 58px;
+		}
+	}
+	@media screen and (max-width: 900px) {
+		.section-skill .skill-bloc {
+			height: auto;
+		}
+		.section-skill .skill-bloc span {
+		    font-size: 30px;
+		}
+	}
+	@media screen and (max-width: 600px) {
+		.section-skill {
+			margin-bottom: 60px;
+		}
+		.section-skill .first {
+			margin-bottom: 30px;
+		}
+		.section-skill .skill-bloc {
+			height: auto;
+			padding: 20px 5px 0;
+			margin: 2px 0 0 5px;
+		    position: relative;
+		    width: 100%;
+		    min-height: 59px;
+		    cursor: pointer;
+		}
+		.section-skill .skill-bloc span {
+			text-align: left;
+			margin-left: 70px;
+			font-size: 20px;
+		}
+		.section-skill .skill-bloc i {
+			font-size: 32px;
+		    top: 7px;
+		    left: 8px;
+		    height: 32px;
+		    width: 32px;
+		    position: absolute;
+		    background-color: #6997b1;
+		    color: #f1f1f1;
+		    border-radius: 50%;
+		    text-align: center;
+		    padding: 10px
+		}
+		.section-skill .skill-bloc p {
+		    display: none;
+    		border-left: 1px solid #26292e;
+		    margin-left: 30px;
+			padding: 15px 25px 10px 10px;
+			text-align: left;
+		}
+	}
+	/** FIN SKILL **/

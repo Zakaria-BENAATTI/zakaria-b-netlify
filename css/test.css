@@ -1,0 +1,61 @@
+	.space-div {
+		height: 600px;
+	}
+	.section-general {
+		height: 300px;
+		background-color: gray;
+	}
+	.section-general * {
+		display: none;
+	}
+
+	#menu > * {
+		/*display: inline-block;*/
+	}
+
+
+
+	/* test */
+	@keyframes bounce {
+	    from {width: 50px; height: 50px;}
+	    30%  {width: 60px; height: 60px;}
+	    50%  {width: 47px; height: 47px;}
+	    75%  {width: 58px; height: 58px;}
+	    85%  {width: 49px; height: 49px;}
+	    93%  {width: 53px; height: 53px;}
+	    to   {width: 50px; height: 50px;}
+	}
+	/*#menu:hover{
+ 		animation: bounceIn 0.7s ease-in-out ;
+	}
+	@keyframes bounceIn {
+	    from {transform: rotate(0deg);}
+	    75%  {transform: rotate(-200deg);}
+	    90%  {transform: rotate(-175deg);}
+	    to   {transform: rotate(-180deg);}
+	}
+	#menu{
+	    animation: bounceOut 0.7s ease-in-out;
+	}
+	@keyframes bounceOut {
+	    from {transform: rotate(-360deg);}
+	    0%   {transform: rotate(-180deg);}
+	    10%  {transform: rotate(-160deg);}
+	    to   {transform: rotate(-360deg);}
+	}*/
+	.t {
+		opacity: 0;
+	}
+	.t1 {
+		/* animation */
+		animation: test 1s ease-in-out;
+	}
+	.t + .t {
+		/* animation */
+		animation: test 1s ease-in-out;
+		animation-delay: 0.5s;
+	}
+	@keyframes test {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}

@@ -1,0 +1,159 @@
+	/* DEBUT MENU */
+	#menu {
+		z-index: 100;
+		background-color: #0b0b0b; /* gris foncé : #111213, gris moyen : #151718, gris clair : #c3c8d6 */
+		text-align: center;
+		width: 100%;
+		display: flex;
+		justify-content: center; 
+		align-items: center; /* Centre les éléments internes verticalement */
+	}
+	#menu.fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+	#menu.relative {
+		position: relative;
+	}
+	#menu nav {
+		position: relative;
+	}
+	#menu nav ul li {
+		display: inline-block;
+		position: relative;
+	}
+	#menu nav ul li a {
+		font-weight: 400;
+		text-decoration: none;
+		color: gray;
+		padding: 20px 15px 15px 15px;
+		border-bottom: 5px solid transparent;
+		display: block;
+		cursor: pointer;
+		-webkit-transition-duration: 0.2s;
+		transition-duration: 0.2s;
+	}
+	#menu nav ul li a:hover {
+		background-color: gray;
+		color: #c3c8d6;
+		-webkit-transition-duration: 0.2s;
+		transition-duration: 0.2s;
+	}
+	/*#menu nav ul li a.btn-menu {
+		border-bottom-color: transparent;
+	}*/
+	#menu nav ul li a.active {
+		/*border-bottom-color: gray;*/
+		color: #fff;
+		background-color: #1379b6;
+	}
+	#menu nav ul li a.active:before {
+	    content: '';
+	    width: 0;
+	    height: 0;
+	    top: 0;
+	    right: 0;
+	    border-style: solid;
+	    /*border-width: 0 40px 60px 0;
+	    border-color: transparent rgba(255,255,255,0.2) transparent transparent;*/
+	    position: absolute;
+	    border-width: 0 0 59px 26px;
+	    border-color: transparent rgba(255,255,255,0.2) rgba(255,255,255,0.2) transparent;
+	}
+	/*#menu nav ul li a.active::before {
+		content: "";
+		display: block;
+	    width: 0;
+	    height: 0;
+	    border-top: 12px solid transparent;
+	    border-left: 12px solid gray;
+	    border-bottom: 12px solid transparent;
+	    position: absolute;
+	    top: 18px;
+    	left: 77px;
+	}*/
+	#menu nav ul li a:active {
+		border-bottom: 5px solid white;
+	}
+	/** FIN MENU TOP **/
+
+	@media screen and (min-width: 1170px) {
+		#menu nav {
+			display: block !important; /* Obligatoire sinon lorsqu'on cache la barre lors du menu responsive, elle ne reapparait plus quand on repasse au format pc */
+		}
+	}
+	@media screen and (max-width: 1170px) {
+		#menu {
+			display: block;
+		}
+		#menu nav ul li {
+			display: block;
+			text-align: center;
+		}
+		#menu nav {
+			display: none;
+			/*position: absolute;*/
+			width: 100%;
+			background-color: #0b0b0b;
+		}
+		/***************/
+		/* ICON BURGER */
+		.menu-icon{
+			display: inline-block;
+			right: 0;
+			cursor: pointer;
+		    position: relative; 
+		    width: 56px;
+		    height: 56px;
+		    -webkit-transition: transform 0.5s;
+		    transition: transform 0.5s;
+		}
+		.menu-icon span {
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    -webkit-transform: translateX(-50%) translateY(-50%); 
+		    transform: translateX(-50%) translateY(-50%); 
+		    display: block;
+		    width: 22px;
+		    height: 2px;
+		    background-color: gray;
+		    -webkit-transition: background 0.5s;
+		    transition: background 0.5s;
+		}
+		.menu-icon span::before, .menu-icon span::after {
+		    content: '';
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    -webkit-transform: translateY(-6px);
+		    transform: translateY(-6px);
+		    display: block;
+		    width: 22px;
+		    height: 2px;
+		    background-color: gray;
+		    -webkit-transition: transform 0.5s;
+		    transition: transform 0.5s;
+		}
+		.menu-icon span::after {
+		    -webkit-transform: translateY(6px); 
+		    transform: translateY(6px); 
+		}
+		/* on le fait tourner */
+		.menu-icon.is-opened span { background: transparent; }
+		.menu-icon.is-opened span::before { transform: translateY(0) rotate(45deg); -webkit-transform: translateY(0) rotate(45deg); }
+		.menu-icon.is-opened span::after { transform: translateY(0) rotate(-45deg); -webkit-transform: translateY(0) rotate(-45deg); }
+		.menu-icon.is-opened { transform: rotate(180deg); -webkit-transform: rotate(180deg); }
+		/** FIN MENU BURGER **/
+		/*********************/
+	}
+	@media screen and (max-width: 600px) {
+		/*.menu-icon {
+		    width: 30px;
+		    height: 30px;
+		}*/
+		#menu {
+			background-color: rgba(0,0,0,0.3);
+		}
+	}

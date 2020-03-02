@@ -1,0 +1,162 @@
+	/** DEBUT TECHNO **/
+	.section-techno {
+		background-color: #26292e;
+		text-align: center;
+		padding: 0 0 100px;
+		color: #6997b1;
+	}
+	.section-techno .target-point {
+		height: 158px;
+	}
+	.section-techno ul {
+		display: inline-block;
+		min-width: 300px;
+		max-width: 910px;
+		margin: 0 auto;
+    	margin-bottom: 50px;
+	}
+	.section-techno .container-btn {
+		text-align: center;
+	}
+	/* CSS PROGRESSBAR DESIGN ET ANIMEE EN SVG */
+	.technos>li {
+		display: inline-block;
+		position: relative !important;
+		text-align: center;
+		color: #93A2AC;
+		font-family: Lato;
+		font-weight: 100;
+		margin: 2rem;
+	}
+	.technos>li:before {
+		content: attr(data-name);
+		position: absolute;
+		width: 100%;
+		bottom: -2rem;
+		font-weight: 400;
+	}
+	.technos>li:after {
+		content: attr(data-percent);
+		position: absolute;
+		width: 100%;
+		top: 3.7rem;
+		left: 0;
+		font-size: 2rem;
+		text-align: center;
+	}
+	.technos svg {
+		width: 10rem;
+		height: 10rem;
+	}
+	.technos svg:nth-child(2) {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+	}
+	.technos svg:nth-child(2) path {
+		-webkit-fill: none;
+		-moz-fill: none;
+		-ms-fill: none;
+		fill: none;
+		-webkit-stroke-width: 26;
+		-moz-stroke-width: 26;
+		-ms-stroke-width: 26;
+		stroke-width: 26;
+		-webkit-stroke-dasharray: 629;
+		-moz-stroke-dasharray: 629;
+		-ms-stroke-dasharray: 629;
+		stroke-dasharray: 629;
+		-webkit-stroke: #26292e;
+		-moz-stroke: #26292e;
+		-ms-stroke: #26292e;
+		stroke: #26292e;
+		/*stroke-linejoin: round;*/
+		/*stroke: rgba(255, 255, 255, 0.9);*/
+	}
+	.technos svg.disable:nth-child(2) path {
+		-webkit-stroke-dashoffset: 0;
+		-moz-stroke-dashoffset: 0;
+		-ms-stroke-dashoffset: 0;
+		stroke-dashoffset: 0;
+	}
+	.technos svg.active:nth-child(2) path {
+		-webkit-animation: load 0.5s;
+		-moz-animation: load 0.5s;
+		-ms-animation: load 0.5s;
+		-o-animation: load 0.5s;
+		animation: load 0.5s;
+	}
+	@-webkit-keyframes load { 
+		0% { stroke-dashoffset:0; -webkit-stroke-dashoffset:0; -moz-stroke-dashoffset:0; -ms-stroke-dashoffset:0; }
+	}
+	@-moz-keyframes load { 
+		0% { stroke-dashoffset:0; -webkit-stroke-dashoffset:0; -moz-stroke-dashoffset:0; -ms-stroke-dashoffset:0; }
+	}
+	@-ms-keyframes load { 
+		0% { stroke-dashoffset:0; -webkit-stroke-dashoffset:0; -moz-stroke-dashoffset:0; -ms-stroke-dashoffset:0; }
+	}
+	@keyframes load { 
+		0% { stroke-dashoffset:0; -webkit-stroke-dashoffset:0; -moz-stroke-dashoffset:0; -ms-stroke-dashoffset:0; }
+	}
+	/* FIN PROGRESSBAR SVG */
+
+	.section-techno ul.technos-by-year {
+		margin-bottom: 100px;
+		max-width: none;
+	}
+	.last-update {
+		color: white;
+		font-weight: 600;
+		padding-top: 12px;
+		display: block;
+		font-size: 0.9em;
+	}
+
+
+	@media screen and (max-width: 1170px) {
+		.section-techno .target-point {
+			height: 58px;
+		}
+	}
+	@media screen and (max-width: 900px) {
+		.technos svg {
+			width: 7rem;
+			height: 7rem;
+		}
+		.section-techno ul {
+	    	margin-bottom: 0;
+		}
+		.technos>li:after {
+		    top: 2.2rem;
+		}
+		.techno-full .technos>li:after {
+		    top: 2.6rem;
+		    font-size: 1.2rem;
+		}
+	}
+	@media screen and (max-width: 600px) {
+		.section-techno {
+			padding: 0 0 80px 0 !important;
+		}
+		.technos svg {
+			width: 4rem;
+			height: 4rem;
+		}
+		.section-techno ul {
+	    	margin-bottom: 0;
+		}
+		.technos>li:after {
+			display: none;
+		    top: 1.3rem;
+    		font-size: 1rem;
+		}
+		.technos>li {
+		    margin: 1.5rem;
+		}
+	}
+	/** FIN TECHNO **/

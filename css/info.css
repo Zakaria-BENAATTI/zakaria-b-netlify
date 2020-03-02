@@ -1,0 +1,48 @@
+	/** DEBUT VOLET INFOS **/
+	.section-info * {
+		font-weight: 400;
+		text-align: left;
+		color: white;
+	}
+	.section-info {
+		background-color: #151718;
+		font-size: 23px;
+		padding: 0 20px;
+		position: relative;
+		overflow: hidden;
+		z-index: 1; /* pour eviter que les elements du header ne viennent par dessus */
+	}
+	.section-info.info-4 {/*
+		color: black;
+		background-color: #fff;*/
+	}
+	.section-info p {
+		max-width: 450px;
+		display: inline-block;
+	    float: right;
+	    margin: 50px 0;
+	    border-left: 2px solid #fff;
+		overflow: hidden;
+		padding-left: 50px;
+		position: relative;
+	}
+	.section-info.info-2 p {
+		max-width: 650px;
+	}
+	.section-info.info-3 p {
+		max-width: 650px;
+	}
+	.section-info.info-4 p, .section-info.info-4 p strong {
+		font-family: 'Gloria Hallelujah';
+	}
+	/** FIN VOLET INFOS **/
+
+	@media screen and (max-width: 900px) {
+		.section-info {
+			font-size: 15px;
+		}
+		.section-info p {
+			margin: 15px 0;
+    		padding-left: 30px;
+		}
+	}
